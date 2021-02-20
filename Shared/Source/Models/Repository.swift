@@ -12,3 +12,15 @@ final class Repository: ObservableObject {
     @Published var vocabularies: [String] = []
     
 }
+
+extension Repository: VocabularyRepositoryObject {
+    
+    func editVocabularies(_ edit: VocabularyEditing) {
+        edit(&vocabularies)
+    }
+    
+}
+
+extension Repository: HomeRepositoryObject {
+    
+}

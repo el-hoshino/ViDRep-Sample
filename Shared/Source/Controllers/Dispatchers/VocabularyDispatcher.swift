@@ -40,3 +40,17 @@ final class VocabularyDispatcher<Reducer: VocabularyReducerObject, Repository: V
     }
     
 }
+
+extension VocabularyDispatcher: HomeDispatcherObject {
+    
+    func runAction(_ action: HomeDispatcherObjectAction) {
+        switch action {
+        case .add(vocabulary: let vocabulary):
+            addVocabulary(vocabulary)
+            
+        case .reset:
+            resetVocabulary()
+        }
+    }
+    
+}
