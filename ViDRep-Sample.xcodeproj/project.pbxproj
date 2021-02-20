@@ -100,6 +100,7 @@
 			children = (
 				BF065B0F25E0FAF70053E8B8 /* ViDRep_SampleApp.swift */,
 				BF065B1025E0FAF70053E8B8 /* ContentView.swift */,
+				BF065B5425E0FB490053E8B8 /* Source */,
 				BF065B1125E0FAFA0053E8B8 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -149,6 +150,37 @@
 				BF065B3725E0FAFA0053E8B8 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		BF065B5425E0FB490053E8B8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BF065B5725E0FB6B0053E8B8 /* Models */,
+				BF065B5625E0FB640053E8B8 /* Controllers */,
+				BF065B5525E0FB5D0053E8B8 /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BF065B5525E0FB5D0053E8B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF065B5625E0FB640053E8B8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BF065B5725E0FB6B0053E8B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
