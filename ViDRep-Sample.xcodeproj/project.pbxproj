@@ -19,6 +19,8 @@
 		BF065B7825E0FC5D0053E8B8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B6625E0FBD10053E8B8 /* Repository.swift */; };
 		BF065B8325E0FCF70053E8B8 /* VocabularyDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B8225E0FCF70053E8B8 /* VocabularyDispatcher.swift */; };
 		BF065B8C25E0FCFA0053E8B8 /* VocabularyDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B8225E0FCF70053E8B8 /* VocabularyDispatcher.swift */; };
+		BF065B9325E0FD5F0053E8B8 /* VocabularyReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B9225E0FD5F0053E8B8 /* VocabularyReducer.swift */; };
+		BF065B9425E0FD5F0053E8B8 /* VocabularyReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B9225E0FD5F0053E8B8 /* VocabularyReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		BF065B3725E0FAFA0053E8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF065B6625E0FBD10053E8B8 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		BF065B8225E0FCF70053E8B8 /* VocabularyDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyDispatcher.swift; sourceTree = "<group>"; };
+		BF065B9225E0FD5F0053E8B8 /* VocabularyReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				BF065B8125E0FCE40053E8B8 /* Dispatchers */,
+				BF065B9125E0FD370053E8B8 /* Reducers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -197,6 +201,14 @@
 				BF065B8225E0FCF70053E8B8 /* VocabularyDispatcher.swift */,
 			);
 			path = Dispatchers;
+			sourceTree = "<group>";
+		};
+		BF065B9125E0FD370053E8B8 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				BF065B9225E0FD5F0053E8B8 /* VocabularyReducer.swift */,
+			);
+			path = Reducers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF065B9325E0FD5F0053E8B8 /* VocabularyReducer.swift in Sources */,
 				BF065B8325E0FCF70053E8B8 /* VocabularyDispatcher.swift in Sources */,
 				BF065B3A25E0FAFA0053E8B8 /* ContentView.swift in Sources */,
 				BF065B3825E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
@@ -367,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF065B9425E0FD5F0053E8B8 /* VocabularyReducer.swift in Sources */,
 				BF065B8C25E0FCFA0053E8B8 /* VocabularyDispatcher.swift in Sources */,
 				BF065B3B25E0FAFA0053E8B8 /* ContentView.swift in Sources */,
 				BF065B3925E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
