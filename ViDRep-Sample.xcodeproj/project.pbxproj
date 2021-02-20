@@ -23,6 +23,10 @@
 		BF065BA025E0FDBD0053E8B8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B9E25E0FDBD0053E8B8 /* String.swift */; };
 		BF065BAE25E0FDF60053E8B8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065BAD25E0FDF60053E8B8 /* HomeView.swift */; };
 		BF065BAF25E0FDF60053E8B8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065BAD25E0FDF60053E8B8 /* HomeView.swift */; };
+		BF1E37EC25E1049B0061E2AA /* VocabularyReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E377425E1029A0061E2AA /* VocabularyReducerTests.swift */; };
+		BF1E382A25E104F50061E2AA /* VocabularyReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E377425E1029A0061E2AA /* VocabularyReducerTests.swift */; };
+		BF1E384B25E105850061E2AA /* VocabularyDispatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E383D25E105420061E2AA /* VocabularyDispatcherTests.swift */; };
+		BF1E385225E105850061E2AA /* VocabularyDispatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E383D25E105420061E2AA /* VocabularyDispatcherTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,20 @@
 			remoteInfo = "ViDRep-Sample (iOS)";
 		};
 		BF065B3225E0FAFA0053E8B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF065B0A25E0FAF70053E8B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF065B1D25E0FAFA0053E8B8;
+			remoteInfo = "ViDRep-Sample (macOS)";
+		};
+		BF1E37E225E1048B0061E2AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF065B0A25E0FAF70053E8B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF065B1525E0FAFA0053E8B8;
+			remoteInfo = "ViDRep-Sample (iOS)";
+		};
+		BF1E381925E104DC0061E2AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BF065B0A25E0FAF70053E8B8 /* Project object */;
 			proxyType = 1;
@@ -61,6 +79,12 @@
 		BF065B9225E0FD5F0053E8B8 /* VocabularyReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyReducer.swift; sourceTree = "<group>"; };
 		BF065B9E25E0FDBD0053E8B8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		BF065BAD25E0FDF60053E8B8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BF1E377425E1029A0061E2AA /* VocabularyReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyReducerTests.swift; sourceTree = "<group>"; };
+		BF1E37DD25E1048B0061E2AA /* UnitTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UnitTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1E37E125E1048B0061E2AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1E381425E104DB0061E2AA /* UnitTests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UnitTests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1E381825E104DC0061E2AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1E383D25E105420061E2AA /* VocabularyDispatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyDispatcherTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +116,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF1E37DA25E1048B0061E2AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1E381125E104DB0061E2AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -103,6 +141,9 @@
 				BF065B1F25E0FAFA0053E8B8 /* macOS */,
 				BF065B2925E0FAFA0053E8B8 /* Tests iOS */,
 				BF065B3425E0FAFA0053E8B8 /* Tests macOS */,
+				BF1E378825E103D90061E2AA /* UnitTests Shared */,
+				BF1E37DE25E1048B0061E2AA /* UnitTests iOS */,
+				BF1E381525E104DC0061E2AA /* UnitTests macOS */,
 				BF065B1725E0FAFA0053E8B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,6 +165,8 @@
 				BF065B1E25E0FAFA0053E8B8 /* ViDRep-Sample.app */,
 				BF065B2625E0FAFA0053E8B8 /* Tests iOS.xctest */,
 				BF065B3125E0FAFA0053E8B8 /* Tests macOS.xctest */,
+				BF1E37DD25E1048B0061E2AA /* UnitTests iOS.xctest */,
+				BF1E381425E104DB0061E2AA /* UnitTests macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,6 +266,31 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		BF1E378825E103D90061E2AA /* UnitTests Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BF1E377425E1029A0061E2AA /* VocabularyReducerTests.swift */,
+				BF1E383D25E105420061E2AA /* VocabularyDispatcherTests.swift */,
+			);
+			path = "UnitTests Shared";
+			sourceTree = "<group>";
+		};
+		BF1E37DE25E1048B0061E2AA /* UnitTests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BF1E37E125E1048B0061E2AA /* Info.plist */,
+			);
+			path = "UnitTests iOS";
+			sourceTree = "<group>";
+		};
+		BF1E381525E104DC0061E2AA /* UnitTests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BF1E381825E104DC0061E2AA /* Info.plist */,
+			);
+			path = "UnitTests macOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -296,6 +364,42 @@
 			productReference = BF065B3125E0FAFA0053E8B8 /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BF1E37DC25E1048B0061E2AA /* UnitTests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1E37E425E1048B0061E2AA /* Build configuration list for PBXNativeTarget "UnitTests iOS" */;
+			buildPhases = (
+				BF1E37D925E1048B0061E2AA /* Sources */,
+				BF1E37DA25E1048B0061E2AA /* Frameworks */,
+				BF1E37DB25E1048B0061E2AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF1E37E325E1048B0061E2AA /* PBXTargetDependency */,
+			);
+			name = "UnitTests iOS";
+			productName = "UnitTests iOS";
+			productReference = BF1E37DD25E1048B0061E2AA /* UnitTests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF1E381325E104DB0061E2AA /* UnitTests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1E381B25E104DC0061E2AA /* Build configuration list for PBXNativeTarget "UnitTests macOS" */;
+			buildPhases = (
+				BF1E381025E104DB0061E2AA /* Sources */,
+				BF1E381125E104DB0061E2AA /* Frameworks */,
+				BF1E381225E104DB0061E2AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF1E381A25E104DC0061E2AA /* PBXTargetDependency */,
+			);
+			name = "UnitTests macOS";
+			productName = "UnitTests macOS";
+			productReference = BF1E381425E104DB0061E2AA /* UnitTests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -319,6 +423,14 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = BF065B1D25E0FAFA0053E8B8;
 					};
+					BF1E37DC25E1048B0061E2AA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BF065B1525E0FAFA0053E8B8;
+					};
+					BF1E381325E104DB0061E2AA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BF065B1D25E0FAFA0053E8B8;
+					};
 				};
 			};
 			buildConfigurationList = BF065B0D25E0FAF70053E8B8 /* Build configuration list for PBXProject "ViDRep-Sample" */;
@@ -338,6 +450,8 @@
 				BF065B1D25E0FAFA0053E8B8 /* ViDRep-Sample (macOS) */,
 				BF065B2525E0FAFA0053E8B8 /* Tests iOS */,
 				BF065B3025E0FAFA0053E8B8 /* Tests macOS */,
+				BF1E37DC25E1048B0061E2AA /* UnitTests iOS */,
+				BF1E381325E104DB0061E2AA /* UnitTests macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -367,6 +481,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BF065B2F25E0FAFA0053E8B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1E37DB25E1048B0061E2AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1E381225E104DB0061E2AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -418,6 +546,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF1E37D925E1048B0061E2AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1E384B25E105850061E2AA /* VocabularyDispatcherTests.swift in Sources */,
+				BF1E37EC25E1049B0061E2AA /* VocabularyReducerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1E381025E104DB0061E2AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1E385225E105850061E2AA /* VocabularyDispatcherTests.swift in Sources */,
+				BF1E382A25E104F50061E2AA /* VocabularyReducerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -430,6 +576,16 @@
 			isa = PBXTargetDependency;
 			target = BF065B1D25E0FAFA0053E8B8 /* ViDRep-Sample (macOS) */;
 			targetProxy = BF065B3225E0FAFA0053E8B8 /* PBXContainerItemProxy */;
+		};
+		BF1E37E325E1048B0061E2AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF065B1525E0FAFA0053E8B8 /* ViDRep-Sample (iOS) */;
+			targetProxy = BF1E37E225E1048B0061E2AA /* PBXContainerItemProxy */;
+		};
+		BF1E381A25E104DC0061E2AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF065B1D25E0FAFA0053E8B8 /* ViDRep-Sample (macOS) */;
+			targetProxy = BF1E381925E104DC0061E2AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -727,6 +883,95 @@
 			};
 			name = Release;
 		};
+		BF1E37E525E1048B0061E2AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC8N9BMQJY;
+				INFOPLIST_FILE = "UnitTests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.UnitTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViDRep-Sample.app/ViDRep-Sample";
+			};
+			name = Debug;
+		};
+		BF1E37E625E1048B0061E2AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC8N9BMQJY;
+				INFOPLIST_FILE = "UnitTests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.UnitTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViDRep-Sample.app/ViDRep-Sample";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF1E381C25E104DC0061E2AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KC8N9BMQJY;
+				INFOPLIST_FILE = "UnitTests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.UnitTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViDRep-Sample.app/Contents/MacOS/ViDRep-Sample";
+			};
+			name = Debug;
+		};
+		BF1E381D25E104DC0061E2AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KC8N9BMQJY;
+				INFOPLIST_FILE = "UnitTests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.UnitTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViDRep-Sample.app/Contents/MacOS/ViDRep-Sample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -771,6 +1016,24 @@
 			buildConfigurations = (
 				BF065B4A25E0FAFA0053E8B8 /* Debug */,
 				BF065B4B25E0FAFA0053E8B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF1E37E425E1048B0061E2AA /* Build configuration list for PBXNativeTarget "UnitTests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1E37E525E1048B0061E2AA /* Debug */,
+				BF1E37E625E1048B0061E2AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF1E381B25E104DC0061E2AA /* Build configuration list for PBXNativeTarget "UnitTests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1E381C25E104DC0061E2AA /* Debug */,
+				BF1E381D25E104DC0061E2AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
