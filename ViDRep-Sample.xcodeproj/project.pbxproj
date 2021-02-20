@@ -15,6 +15,8 @@
 		BF065B3B25E0FAFA0053E8B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B1025E0FAF70053E8B8 /* ContentView.swift */; };
 		BF065B3C25E0FAFA0053E8B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF065B1125E0FAFA0053E8B8 /* Assets.xcassets */; };
 		BF065B3D25E0FAFA0053E8B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF065B1125E0FAFA0053E8B8 /* Assets.xcassets */; };
+		BF065B6725E0FBD10053E8B8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B6625E0FBD10053E8B8 /* Repository.swift */; };
+		BF065B7825E0FC5D0053E8B8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B6625E0FBD10053E8B8 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		BF065B3125E0FAFA0053E8B8 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF065B3525E0FAFA0053E8B8 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		BF065B3725E0FAFA0053E8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF065B6625E0FBD10053E8B8 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,7 @@
 		BF065B5725E0FB6B0053E8B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BF065B6625E0FBD10053E8B8 /* Repository.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -342,6 +346,7 @@
 			files = (
 				BF065B3A25E0FAFA0053E8B8 /* ContentView.swift in Sources */,
 				BF065B3825E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
+				BF065B6725E0FBD10053E8B8 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +356,7 @@
 			files = (
 				BF065B3B25E0FAFA0053E8B8 /* ContentView.swift in Sources */,
 				BF065B3925E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
+				BF065B7825E0FC5D0053E8B8 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
