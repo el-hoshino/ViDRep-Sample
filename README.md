@@ -62,6 +62,8 @@ So, what do all the components do in ViDRep?
 
 `Dispatcher` should handle events fired from a `View`, by asking the reducer to generate a new data (or a state if you're familiar with Redux) from given event, and then stores the new data into `Repository`. If needed `Dispatcher` may also directly get required data from `Repository` when the given event doesn't contain all required information, this is why on the diagram above there's a dotted line between `Dispatcher` and `Repository`.
 
+`Dispatcher` might be `ObservableObject` if wants to use it as `@EnvironmentObject`, but it should be stateless.
+
 `Dispatcher` will also have 2 types of dependencies: a `Reducer` and a `Repository`. `Reducer` should generate a new data from given data and action, or on other words, should handle the business logic. `Repository` should be able to store the new data.
 
 If the business logics are too simple, or the scale of the project/team is too small, you may also choose to contain the reducer logics inside the `Dispatcher` to get rid of the `Reducer`. This could make writing unit tests a tiny little bit difficult comparing with having the independent `Reducer` component, but it takes much fewer lines of code on the other hand.
