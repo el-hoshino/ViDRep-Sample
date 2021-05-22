@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF01A311265939F3007EDE45 /* UserInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A310265939F3007EDE45 /* UserInputData.swift */; };
+		BF01A31326593CAC007EDE45 /* SearchTextInvalidReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A31226593CAC007EDE45 /* SearchTextInvalidReason.swift */; };
+		BF01A31526593E4F007EDE45 /* GeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A31426593E4F007EDE45 /* GeneralError.swift */; };
+		BF01A31726595968007EDE45 /* SearchTextInvalidReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A31226593CAC007EDE45 /* SearchTextInvalidReason.swift */; };
+		BF01A31826595968007EDE45 /* GeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A31426593E4F007EDE45 /* GeneralError.swift */; };
+		BF01A31926595968007EDE45 /* AsyncState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF930F6626593727005F2934 /* AsyncState.swift */; };
+		BF01A31A26595968007EDE45 /* UserInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A310265939F3007EDE45 /* UserInputData.swift */; };
 		BF065B2B25E0FAFA0053E8B8 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B2A25E0FAFA0053E8B8 /* Tests_iOS.swift */; };
 		BF065B3625E0FAFA0053E8B8 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B3525E0FAFA0053E8B8 /* Tests_macOS.swift */; };
 		BF065B3825E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B0F25E0FAF70053E8B8 /* ViDRep_SampleApp.swift */; };
@@ -27,6 +34,7 @@
 		BF1E382A25E104F50061E2AA /* VocabularyReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E377425E1029A0061E2AA /* VocabularyReducerTests.swift */; };
 		BF1E384B25E105850061E2AA /* VocabularyDispatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E383D25E105420061E2AA /* VocabularyDispatcherTests.swift */; };
 		BF1E385225E105850061E2AA /* VocabularyDispatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E383D25E105420061E2AA /* VocabularyDispatcherTests.swift */; };
+		BF930F6726593727005F2934 /* AsyncState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF930F6626593727005F2934 /* AsyncState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +69,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF01A310265939F3007EDE45 /* UserInputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputData.swift; sourceTree = "<group>"; };
+		BF01A31226593CAC007EDE45 /* SearchTextInvalidReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextInvalidReason.swift; sourceTree = "<group>"; };
+		BF01A31426593E4F007EDE45 /* GeneralError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralError.swift; sourceTree = "<group>"; };
 		BF065B0F25E0FAF70053E8B8 /* ViDRep_SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViDRep_SampleApp.swift; sourceTree = "<group>"; };
 		BF065B1125E0FAFA0053E8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF065B1625E0FAFA0053E8B8 /* ViDRep-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViDRep-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +96,7 @@
 		BF1E381425E104DB0061E2AA /* UnitTests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UnitTests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1E381825E104DC0061E2AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF1E383D25E105420061E2AA /* VocabularyDispatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyDispatcherTests.swift; sourceTree = "<group>"; };
+		BF930F6626593727005F2934 /* AsyncState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +249,7 @@
 		BF065B5725E0FB6B0053E8B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BF930F652659370D005F2934 /* Data */,
 				BF065B6625E0FBD10053E8B8 /* Repository.swift */,
 			);
 			path = Models;
@@ -289,6 +302,17 @@
 				BF1E381825E104DC0061E2AA /* Info.plist */,
 			);
 			path = "UnitTests macOS";
+			sourceTree = "<group>";
+		};
+		BF930F652659370D005F2934 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BF930F6626593727005F2934 /* AsyncState.swift */,
+				BF01A310265939F3007EDE45 /* UserInputData.swift */,
+				BF01A31226593CAC007EDE45 /* SearchTextInvalidReason.swift */,
+				BF01A31426593E4F007EDE45 /* GeneralError.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,9 +534,13 @@
 			files = (
 				BF065B9325E0FD5F0053E8B8 /* VocabularyReducer.swift in Sources */,
 				BF065BAE25E0FDF60053E8B8 /* HomeView.swift in Sources */,
+				BF930F6726593727005F2934 /* AsyncState.swift in Sources */,
+				BF01A311265939F3007EDE45 /* UserInputData.swift in Sources */,
 				BF065B8325E0FCF70053E8B8 /* VocabularyDispatcher.swift in Sources */,
 				BF065B3825E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
 				BF065B9F25E0FDBD0053E8B8 /* String.swift in Sources */,
+				BF01A31526593E4F007EDE45 /* GeneralError.swift in Sources */,
+				BF01A31326593CAC007EDE45 /* SearchTextInvalidReason.swift in Sources */,
 				BF065B6725E0FBD10053E8B8 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,12 +549,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF01A31926595968007EDE45 /* AsyncState.swift in Sources */,
 				BF065B9425E0FD5F0053E8B8 /* VocabularyReducer.swift in Sources */,
 				BF065BAF25E0FDF60053E8B8 /* HomeView.swift in Sources */,
+				BF01A31726595968007EDE45 /* SearchTextInvalidReason.swift in Sources */,
 				BF065B8C25E0FCFA0053E8B8 /* VocabularyDispatcher.swift in Sources */,
+				BF44370D26569EBE00485F40 /* SearchView.swift in Sources */,
 				BF065B3925E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
+				BF01A31A26595968007EDE45 /* UserInputData.swift in Sources */,
 				BF065BA025E0FDBD0053E8B8 /* String.swift in Sources */,
 				BF065B7825E0FC5D0053E8B8 /* Repository.swift in Sources */,
+				BF01A31826595968007EDE45 /* GeneralError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
