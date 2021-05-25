@@ -14,6 +14,8 @@
 		BF01A31826595968007EDE45 /* GeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A31426593E4F007EDE45 /* GeneralError.swift */; };
 		BF01A31926595968007EDE45 /* AsyncState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF930F6626593727005F2934 /* AsyncState.swift */; };
 		BF01A31A26595968007EDE45 /* UserInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A310265939F3007EDE45 /* UserInputData.swift */; };
+		BF01A32126595D36007EDE45 /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32026595D36007EDE45 /* AppRepository.swift */; };
+		BF01A32226595D36007EDE45 /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32026595D36007EDE45 /* AppRepository.swift */; };
 		BF01A32826595EC3007EDE45 /* SearchTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32726595EC3007EDE45 /* SearchTextInput.swift */; };
 		BF01A32926595EC3007EDE45 /* SearchTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32726595EC3007EDE45 /* SearchTextInput.swift */; };
 		BF01A32C2659613B007EDE45 /* CataasAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32B2659613B007EDE45 /* CataasAPIClient.swift */; };
@@ -92,6 +94,7 @@
 		BF01A310265939F3007EDE45 /* UserInputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputData.swift; sourceTree = "<group>"; };
 		BF01A31226593CAC007EDE45 /* SearchTextInvalidReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextInvalidReason.swift; sourceTree = "<group>"; };
 		BF01A31426593E4F007EDE45 /* GeneralError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralError.swift; sourceTree = "<group>"; };
+		BF01A32026595D36007EDE45 /* AppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRepository.swift; sourceTree = "<group>"; };
 		BF01A32726595EC3007EDE45 /* SearchTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextInput.swift; sourceTree = "<group>"; };
 		BF01A32B2659613B007EDE45 /* CataasAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CataasAPIClient.swift; sourceTree = "<group>"; };
 		BF01A32E26596BDC007EDE45 /* CataasJSONResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CataasJSONResponse.swift; sourceTree = "<group>"; };
@@ -175,6 +178,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF01A31F26595D29007EDE45 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BF01A32026595D36007EDE45 /* AppRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		BF01A32626595EB0007EDE45 /* Typealiases */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				BF01A32626595EB0007EDE45 /* Typealiases */,
+				BF01A31F26595D29007EDE45 /* Repositories */,
 				BF930F652659370D005F2934 /* Data */,
 				BF065B6625E0FBD10053E8B8 /* Repository.swift */,
 			);
@@ -598,6 +610,7 @@
 				BF065B8325E0FCF70053E8B8 /* VocabularyDispatcher.swift in Sources */,
 				BF01A32C2659613B007EDE45 /* CataasAPIClient.swift in Sources */,
 				BF01A354265AB627007EDE45 /* DataSaveLoadError.swift in Sources */,
+				BF01A32126595D36007EDE45 /* AppRepository.swift in Sources */,
 				BF01A34E265AB2F1007EDE45 /* UserDefaultsDatabase.swift in Sources */,
 				BF065B3825E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
 				BF065B9F25E0FDBD0053E8B8 /* String.swift in Sources */,
@@ -626,6 +639,7 @@
 				BF44370D26569EBE00485F40 /* SearchView.swift in Sources */,
 				BF01A32D2659613B007EDE45 /* CataasAPIClient.swift in Sources */,
 				BF01A355265AB627007EDE45 /* DataSaveLoadError.swift in Sources */,
+				BF01A32226595D36007EDE45 /* AppRepository.swift in Sources */,
 				BF01A34F265AB2F1007EDE45 /* UserDefaultsDatabase.swift in Sources */,
 				BF065B3925E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
 				BF01A31A26595968007EDE45 /* UserInputData.swift in Sources */,
