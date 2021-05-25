@@ -16,6 +16,10 @@
 		BF01A31A26595968007EDE45 /* UserInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A310265939F3007EDE45 /* UserInputData.swift */; };
 		BF01A32826595EC3007EDE45 /* SearchTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32726595EC3007EDE45 /* SearchTextInput.swift */; };
 		BF01A32926595EC3007EDE45 /* SearchTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32726595EC3007EDE45 /* SearchTextInput.swift */; };
+		BF01A32C2659613B007EDE45 /* CataasAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32B2659613B007EDE45 /* CataasAPIClient.swift */; };
+		BF01A32D2659613B007EDE45 /* CataasAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32B2659613B007EDE45 /* CataasAPIClient.swift */; };
+		BF01A32F26596BDC007EDE45 /* CataasJSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32E26596BDC007EDE45 /* CataasJSONResponse.swift */; };
+		BF01A33026596BDC007EDE45 /* CataasJSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32E26596BDC007EDE45 /* CataasJSONResponse.swift */; };
 		BF01A33226596D46007EDE45 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33126596D46007EDE45 /* CatImage.swift */; };
 		BF01A33326596D46007EDE45 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33126596D46007EDE45 /* CatImage.swift */; };
 		BF01A33A26598009007EDE45 /* AnyCancellable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33926598009007EDE45 /* AnyCancellable+.swift */; };
@@ -87,6 +91,8 @@
 		BF01A31226593CAC007EDE45 /* SearchTextInvalidReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextInvalidReason.swift; sourceTree = "<group>"; };
 		BF01A31426593E4F007EDE45 /* GeneralError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralError.swift; sourceTree = "<group>"; };
 		BF01A32726595EC3007EDE45 /* SearchTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextInput.swift; sourceTree = "<group>"; };
+		BF01A32B2659613B007EDE45 /* CataasAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CataasAPIClient.swift; sourceTree = "<group>"; };
+		BF01A32E26596BDC007EDE45 /* CataasJSONResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CataasJSONResponse.swift; sourceTree = "<group>"; };
 		BF01A33126596D46007EDE45 /* CatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImage.swift; sourceTree = "<group>"; };
 		BF01A33926598009007EDE45 /* AnyCancellable+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyCancellable+.swift"; sourceTree = "<group>"; };
 		BF01A33C265980A1007EDE45 /* Publisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+.swift"; sourceTree = "<group>"; };
@@ -175,6 +181,15 @@
 			path = Typealiases;
 			sourceTree = "<group>";
 		};
+		BF01A32A2659606B007EDE45 /* Infrastructures */ = {
+			isa = PBXGroup;
+			children = (
+				BF01A32B2659613B007EDE45 /* CataasAPIClient.swift */,
+				BF01A32E26596BDC007EDE45 /* CataasJSONResponse.swift */,
+			);
+			path = Infrastructures;
+			sourceTree = "<group>";
+		};
 		BF065B0925E0FAF70053E8B8 = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +266,7 @@
 		BF065B5425E0FB490053E8B8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BF01A32A2659606B007EDE45 /* Infrastructures */,
 				BF065B9D25E0FDB00053E8B8 /* Extensions */,
 				BF065B5725E0FB6B0053E8B8 /* Models */,
 				BF065B5625E0FB640053E8B8 /* Controllers */,
@@ -576,6 +592,7 @@
 				BF381B53265C019200D5484B /* SavedImageList.swift in Sources */,
 				BF01A33226596D46007EDE45 /* CatImage.swift in Sources */,
 				BF065B8325E0FCF70053E8B8 /* VocabularyDispatcher.swift in Sources */,
+				BF01A32C2659613B007EDE45 /* CataasAPIClient.swift in Sources */,
 				BF01A354265AB627007EDE45 /* DataSaveLoadError.swift in Sources */,
 				BF065B3825E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
 				BF065B9F25E0FDBD0053E8B8 /* String.swift in Sources */,
@@ -584,6 +601,7 @@
 				BF01A32826595EC3007EDE45 /* SearchTextInput.swift in Sources */,
 				BF01A33A26598009007EDE45 /* AnyCancellable+.swift in Sources */,
 				BF065B6725E0FBD10053E8B8 /* Repository.swift in Sources */,
+				BF01A32F26596BDC007EDE45 /* CataasJSONResponse.swift in Sources */,
 				BF381B56265C1A4000D5484B /* ImageData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,6 +619,7 @@
 				BF01A33326596D46007EDE45 /* CatImage.swift in Sources */,
 				BF065B8C25E0FCFA0053E8B8 /* VocabularyDispatcher.swift in Sources */,
 				BF44370D26569EBE00485F40 /* SearchView.swift in Sources */,
+				BF01A32D2659613B007EDE45 /* CataasAPIClient.swift in Sources */,
 				BF01A355265AB627007EDE45 /* DataSaveLoadError.swift in Sources */,
 				BF065B3925E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
 				BF01A31A26595968007EDE45 /* UserInputData.swift in Sources */,
@@ -609,6 +628,7 @@
 				BF01A32926595EC3007EDE45 /* SearchTextInput.swift in Sources */,
 				BF01A33B26598009007EDE45 /* AnyCancellable+.swift in Sources */,
 				BF01A31826595968007EDE45 /* GeneralError.swift in Sources */,
+				BF01A33026596BDC007EDE45 /* CataasJSONResponse.swift in Sources */,
 				BF381B57265C1A4100D5484B /* ImageData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
