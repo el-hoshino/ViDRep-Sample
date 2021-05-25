@@ -26,6 +26,8 @@
 		BF01A33B26598009007EDE45 /* AnyCancellable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33926598009007EDE45 /* AnyCancellable+.swift */; };
 		BF01A33D265980A1007EDE45 /* Publisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33C265980A1007EDE45 /* Publisher+.swift */; };
 		BF01A33E265980A1007EDE45 /* Publisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33C265980A1007EDE45 /* Publisher+.swift */; };
+		BF01A34E265AB2F1007EDE45 /* UserDefaultsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A34D265AB2F1007EDE45 /* UserDefaultsDatabase.swift */; };
+		BF01A34F265AB2F1007EDE45 /* UserDefaultsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A34D265AB2F1007EDE45 /* UserDefaultsDatabase.swift */; };
 		BF01A354265AB627007EDE45 /* DataSaveLoadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A353265AB627007EDE45 /* DataSaveLoadError.swift */; };
 		BF01A355265AB627007EDE45 /* DataSaveLoadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A353265AB627007EDE45 /* DataSaveLoadError.swift */; };
 		BF065B2B25E0FAFA0053E8B8 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B2A25E0FAFA0053E8B8 /* Tests_iOS.swift */; };
@@ -96,6 +98,7 @@
 		BF01A33126596D46007EDE45 /* CatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImage.swift; sourceTree = "<group>"; };
 		BF01A33926598009007EDE45 /* AnyCancellable+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyCancellable+.swift"; sourceTree = "<group>"; };
 		BF01A33C265980A1007EDE45 /* Publisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+.swift"; sourceTree = "<group>"; };
+		BF01A34D265AB2F1007EDE45 /* UserDefaultsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDatabase.swift; sourceTree = "<group>"; };
 		BF01A353265AB627007EDE45 /* DataSaveLoadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSaveLoadError.swift; sourceTree = "<group>"; };
 		BF065B0F25E0FAF70053E8B8 /* ViDRep_SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViDRep_SampleApp.swift; sourceTree = "<group>"; };
 		BF065B1125E0FAFA0053E8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,6 +189,7 @@
 			children = (
 				BF01A32B2659613B007EDE45 /* CataasAPIClient.swift */,
 				BF01A32E26596BDC007EDE45 /* CataasJSONResponse.swift */,
+				BF01A34D265AB2F1007EDE45 /* UserDefaultsDatabase.swift */,
 			);
 			path = Infrastructures;
 			sourceTree = "<group>";
@@ -594,6 +598,7 @@
 				BF065B8325E0FCF70053E8B8 /* VocabularyDispatcher.swift in Sources */,
 				BF01A32C2659613B007EDE45 /* CataasAPIClient.swift in Sources */,
 				BF01A354265AB627007EDE45 /* DataSaveLoadError.swift in Sources */,
+				BF01A34E265AB2F1007EDE45 /* UserDefaultsDatabase.swift in Sources */,
 				BF065B3825E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
 				BF065B9F25E0FDBD0053E8B8 /* String.swift in Sources */,
 				BF01A31526593E4F007EDE45 /* GeneralError.swift in Sources */,
@@ -621,6 +626,7 @@
 				BF44370D26569EBE00485F40 /* SearchView.swift in Sources */,
 				BF01A32D2659613B007EDE45 /* CataasAPIClient.swift in Sources */,
 				BF01A355265AB627007EDE45 /* DataSaveLoadError.swift in Sources */,
+				BF01A34F265AB2F1007EDE45 /* UserDefaultsDatabase.swift in Sources */,
 				BF065B3925E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
 				BF01A31A26595968007EDE45 /* UserInputData.swift in Sources */,
 				BF065BA025E0FDBD0053E8B8 /* String.swift in Sources */,
