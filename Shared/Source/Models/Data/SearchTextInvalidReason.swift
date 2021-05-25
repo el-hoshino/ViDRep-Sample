@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SearchTextInvalidReason {
+enum SearchTextInvalidReason: Equatable {
     case textTooLong
     case textContainsDog
 }

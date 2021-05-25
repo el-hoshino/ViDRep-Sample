@@ -62,3 +62,7 @@ extension UserInputData.LocalValidation where Invalid == SearchTextInvalidReason
     }
     
 }
+
+extension UserInputData.LocalValidation: Equatable where Invalid: Equatable {}
+
+extension UserInputData: Equatable where Value: Equatable, Invalid: Equatable {}
