@@ -1,5 +1,5 @@
 //
-//  String.swift
+//  String+.swift
 //  ViDRep-Sample
 //
 //  Created by 史 翔新 on 2021/02/20.
