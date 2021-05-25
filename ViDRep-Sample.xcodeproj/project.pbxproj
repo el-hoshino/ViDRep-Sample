@@ -73,6 +73,8 @@
 		BF5A34E5265D4E27008866BB /* ImageFillGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */; };
 		BF5A34E6265D61BB008866BB /* ImageFillGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */; };
 		BF930F6726593727005F2934 /* AsyncState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF930F6626593727005F2934 /* AsyncState.swift */; };
+		BFD91CA9265CEBFD00F60833 /* AppResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD91CA8265CEBFD00F60833 /* AppResolver.swift */; };
+		BFD91CAA265CEBFD00F60833 /* AppResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD91CA8265CEBFD00F60833 /* AppResolver.swift */; };
 		BFD91CAC265CF10100F60833 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD91CAB265CF10100F60833 /* AppRouter.swift */; };
 		BFD91CAD265CF10100F60833 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD91CAB265CF10100F60833 /* AppRouter.swift */; };
 		BFD91CAF265CF25C00F60833 /* RoutingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD91CAE265CF25C00F60833 /* RoutingModifier.swift */; };
@@ -158,6 +160,7 @@
 		BF44370B26569EBE00485F40 /* SearchScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScene.swift; sourceTree = "<group>"; };
 		BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFillGrid.swift; sourceTree = "<group>"; };
 		BF930F6626593727005F2934 /* AsyncState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncState.swift; sourceTree = "<group>"; };
+		BFD91CA8265CEBFD00F60833 /* AppResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResolver.swift; sourceTree = "<group>"; };
 		BFD91CAB265CF10100F60833 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		BFD91CAE265CF25C00F60833 /* RoutingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -450,6 +453,7 @@
 		BFD91CA7265CEBE900F60833 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				BFD91CA8265CEBFD00F60833 /* AppResolver.swift */,
 				BFD91CAB265CF10100F60833 /* AppRouter.swift */,
 			);
 			path = App;
@@ -675,6 +679,7 @@
 				BF01A33D265980A1007EDE45 /* Publisher+.swift in Sources */,
 				BF065B9325E0FD5F0053E8B8 /* VocabularyReducer.swift in Sources */,
 				BF065BAE25E0FDF60053E8B8 /* HomeView.swift in Sources */,
+				BFD91CA9265CEBFD00F60833 /* AppResolver.swift in Sources */,
 				BF930F6726593727005F2934 /* AsyncState.swift in Sources */,
 				BF01A32426595DE9007EDE45 /* ImageSearchingDispatcher.swift in Sources */,
 				BF01A311265939F3007EDE45 /* UserInputData.swift in Sources */,
@@ -713,6 +718,7 @@
 				BF01A33E265980A1007EDE45 /* Publisher+.swift in Sources */,
 				BF01A31926595968007EDE45 /* AsyncState.swift in Sources */,
 				BF065B9425E0FD5F0053E8B8 /* VocabularyReducer.swift in Sources */,
+				BFD91CAA265CEBFD00F60833 /* AppResolver.swift in Sources */,
 				BF065BAF25E0FDF60053E8B8 /* HomeView.swift in Sources */,
 				BF01A32526595DE9007EDE45 /* ImageSearchingDispatcher.swift in Sources */,
 				BF01A31726595968007EDE45 /* SearchTextInvalidReason.swift in Sources */,
