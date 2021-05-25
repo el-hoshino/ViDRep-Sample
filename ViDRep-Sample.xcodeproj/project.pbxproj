@@ -28,12 +28,20 @@
 		BF01A33026596BDC007EDE45 /* CataasJSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32E26596BDC007EDE45 /* CataasJSONResponse.swift */; };
 		BF01A33226596D46007EDE45 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33126596D46007EDE45 /* CatImage.swift */; };
 		BF01A33326596D46007EDE45 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33126596D46007EDE45 /* CatImage.swift */; };
+		BF01A33726597737007EDE45 /* CataasAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A3342659771C007EDE45 /* CataasAPIClientTests.swift */; };
+		BF01A33826597737007EDE45 /* CataasAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A3342659771C007EDE45 /* CataasAPIClientTests.swift */; };
 		BF01A33A26598009007EDE45 /* AnyCancellable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33926598009007EDE45 /* AnyCancellable+.swift */; };
 		BF01A33B26598009007EDE45 /* AnyCancellable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33926598009007EDE45 /* AnyCancellable+.swift */; };
 		BF01A33D265980A1007EDE45 /* Publisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33C265980A1007EDE45 /* Publisher+.swift */; };
 		BF01A33E265980A1007EDE45 /* Publisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33C265980A1007EDE45 /* Publisher+.swift */; };
+		BF01A34026598307007EDE45 /* ImageSearchingDispatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33F26598307007EDE45 /* ImageSearchingDispatcherTests.swift */; };
+		BF01A34126598307007EDE45 /* ImageSearchingDispatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A33F26598307007EDE45 /* ImageSearchingDispatcherTests.swift */; };
+		BF01A3432659887E007EDE45 /* XCTExpect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A3422659887E007EDE45 /* XCTExpect.swift */; };
+		BF01A3442659887E007EDE45 /* XCTExpect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A3422659887E007EDE45 /* XCTExpect.swift */; };
 		BF01A348265A91F0007EDE45 /* CatImageSearchTextReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A345265A912D007EDE45 /* CatImageSearchTextReducer.swift */; };
 		BF01A349265A91F0007EDE45 /* CatImageSearchTextReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A345265A912D007EDE45 /* CatImageSearchTextReducer.swift */; };
+		BF01A34B265A93BB007EDE45 /* CatImageSearchTextReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A34A265A93BB007EDE45 /* CatImageSearchTextReducerTests.swift */; };
+		BF01A34C265A93BB007EDE45 /* CatImageSearchTextReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A34A265A93BB007EDE45 /* CatImageSearchTextReducerTests.swift */; };
 		BF01A34E265AB2F1007EDE45 /* UserDefaultsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A34D265AB2F1007EDE45 /* UserDefaultsDatabase.swift */; };
 		BF01A34F265AB2F1007EDE45 /* UserDefaultsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A34D265AB2F1007EDE45 /* UserDefaultsDatabase.swift */; };
 		BF01A354265AB627007EDE45 /* DataSaveLoadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A353265AB627007EDE45 /* DataSaveLoadError.swift */; };
@@ -123,9 +131,13 @@
 		BF01A32B2659613B007EDE45 /* CataasAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CataasAPIClient.swift; sourceTree = "<group>"; };
 		BF01A32E26596BDC007EDE45 /* CataasJSONResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CataasJSONResponse.swift; sourceTree = "<group>"; };
 		BF01A33126596D46007EDE45 /* CatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImage.swift; sourceTree = "<group>"; };
+		BF01A3342659771C007EDE45 /* CataasAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CataasAPIClientTests.swift; sourceTree = "<group>"; };
 		BF01A33926598009007EDE45 /* AnyCancellable+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyCancellable+.swift"; sourceTree = "<group>"; };
 		BF01A33C265980A1007EDE45 /* Publisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+.swift"; sourceTree = "<group>"; };
+		BF01A33F26598307007EDE45 /* ImageSearchingDispatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchingDispatcherTests.swift; sourceTree = "<group>"; };
+		BF01A3422659887E007EDE45 /* XCTExpect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTExpect.swift; sourceTree = "<group>"; };
 		BF01A345265A912D007EDE45 /* CatImageSearchTextReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageSearchTextReducer.swift; sourceTree = "<group>"; };
+		BF01A34A265A93BB007EDE45 /* CatImageSearchTextReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageSearchTextReducerTests.swift; sourceTree = "<group>"; };
 		BF01A34D265AB2F1007EDE45 /* UserDefaultsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDatabase.swift; sourceTree = "<group>"; };
 		BF01A353265AB627007EDE45 /* DataSaveLoadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSaveLoadError.swift; sourceTree = "<group>"; };
 		BF01A356265ABD8F007EDE45 /* ImagePreviewScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewScene.swift; sourceTree = "<group>"; };
@@ -408,6 +420,10 @@
 			children = (
 				BF1E377425E1029A0061E2AA /* VocabularyReducerTests.swift */,
 				BF1E383D25E105420061E2AA /* VocabularyDispatcherTests.swift */,
+				BF01A3342659771C007EDE45 /* CataasAPIClientTests.swift */,
+				BF01A33F26598307007EDE45 /* ImageSearchingDispatcherTests.swift */,
+				BF01A34A265A93BB007EDE45 /* CatImageSearchTextReducerTests.swift */,
+				BF01A3422659887E007EDE45 /* XCTExpect.swift */,
 			);
 			path = "UnitTests Shared";
 			sourceTree = "<group>";
@@ -770,8 +786,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF01A34B265A93BB007EDE45 /* CatImageSearchTextReducerTests.swift in Sources */,
 				BF1E384B25E105850061E2AA /* VocabularyDispatcherTests.swift in Sources */,
 				BF1E37EC25E1049B0061E2AA /* VocabularyReducerTests.swift in Sources */,
+				BF01A33726597737007EDE45 /* CataasAPIClientTests.swift in Sources */,
+				BF01A34026598307007EDE45 /* ImageSearchingDispatcherTests.swift in Sources */,
+				BF01A3432659887E007EDE45 /* XCTExpect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,8 +799,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF01A34C265A93BB007EDE45 /* CatImageSearchTextReducerTests.swift in Sources */,
 				BF1E385225E105850061E2AA /* VocabularyDispatcherTests.swift in Sources */,
 				BF1E382A25E104F50061E2AA /* VocabularyReducerTests.swift in Sources */,
+				BF01A33826597737007EDE45 /* CataasAPIClientTests.swift in Sources */,
+				BF01A34126598307007EDE45 /* ImageSearchingDispatcherTests.swift in Sources */,
+				BF01A3442659887E007EDE45 /* XCTExpect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
