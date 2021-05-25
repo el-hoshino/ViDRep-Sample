@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-enum ViewID {
-    case searchScene
-    case savedImageListScene
-    case imagePreviewScene(image: CatImage)
-}
-
 protocol RouterObject: ObservableObject {
     
     associatedtype NextNavigationView: View
