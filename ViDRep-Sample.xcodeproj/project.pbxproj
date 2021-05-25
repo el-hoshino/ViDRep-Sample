@@ -365,6 +365,7 @@
 			children = (
 				BF01A31F26595D29007EDE45 /* Repositories */,
 				BF01A32626595EB0007EDE45 /* Typealiases */,
+				BF5A34EB265D7A95008866BB /* Error */,
 				BF930F652659370D005F2934 /* Data */,
 			);
 			path = Models;
@@ -441,16 +442,23 @@
 			path = Routers;
 			sourceTree = "<group>";
 		};
+		BF5A34EB265D7A95008866BB /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				BF01A31426593E4F007EDE45 /* GeneralError.swift */,
+				BF01A353265AB627007EDE45 /* DataSaveLoadError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		BF930F652659370D005F2934 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				BF930F6626593727005F2934 /* AsyncState.swift */,
 				BF01A310265939F3007EDE45 /* UserInputData.swift */,
 				BF01A31226593CAC007EDE45 /* SearchTextInvalidReason.swift */,
-				BF01A31426593E4F007EDE45 /* GeneralError.swift */,
 				BF01A33126596D46007EDE45 /* CatImage.swift */,
 				BF381B52265C019200D5484B /* SavedImageList.swift */,
-				BF01A353265AB627007EDE45 /* DataSaveLoadError.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
