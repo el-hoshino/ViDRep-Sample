@@ -14,6 +14,8 @@
 		BF01A31826595968007EDE45 /* GeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A31426593E4F007EDE45 /* GeneralError.swift */; };
 		BF01A31926595968007EDE45 /* AsyncState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF930F6626593727005F2934 /* AsyncState.swift */; };
 		BF01A31A26595968007EDE45 /* UserInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A310265939F3007EDE45 /* UserInputData.swift */; };
+		BF01A31C265959B7007EDE45 /* LoadingProgressViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A31B265959B7007EDE45 /* LoadingProgressViewModifier.swift */; };
+		BF01A31D265959B7007EDE45 /* LoadingProgressViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A31B265959B7007EDE45 /* LoadingProgressViewModifier.swift */; };
 		BF01A32126595D36007EDE45 /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32026595D36007EDE45 /* AppRepository.swift */; };
 		BF01A32226595D36007EDE45 /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32026595D36007EDE45 /* AppRepository.swift */; };
 		BF01A32426595DE9007EDE45 /* ImageSearchingDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32326595DE9007EDE45 /* ImageSearchingDispatcher.swift */; };
@@ -102,6 +104,7 @@
 		BF01A310265939F3007EDE45 /* UserInputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputData.swift; sourceTree = "<group>"; };
 		BF01A31226593CAC007EDE45 /* SearchTextInvalidReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextInvalidReason.swift; sourceTree = "<group>"; };
 		BF01A31426593E4F007EDE45 /* GeneralError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralError.swift; sourceTree = "<group>"; };
+		BF01A31B265959B7007EDE45 /* LoadingProgressViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingProgressViewModifier.swift; sourceTree = "<group>"; };
 		BF01A32026595D36007EDE45 /* AppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRepository.swift; sourceTree = "<group>"; };
 		BF01A32326595DE9007EDE45 /* ImageSearchingDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchingDispatcher.swift; sourceTree = "<group>"; };
 		BF01A32726595EC3007EDE45 /* SearchTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextInput.swift; sourceTree = "<group>"; };
@@ -190,6 +193,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF01A31626595949007EDE45 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				BF01A31B265959B7007EDE45 /* LoadingProgressViewModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		BF01A31F26595D29007EDE45 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				BF5A34E3265D4DF0008866BB /* Components */,
+				BF01A31626595949007EDE45 /* ViewModifiers */,
 				BF065BAD25E0FDF60053E8B8 /* HomeView.swift */,
 			);
 			path = Views;
@@ -646,6 +658,7 @@
 				BF01A348265A91F0007EDE45 /* CatImageSearchTextReducer.swift in Sources */,
 				BF01A33A26598009007EDE45 /* AnyCancellable+.swift in Sources */,
 				BF065B6725E0FBD10053E8B8 /* Repository.swift in Sources */,
+				BF01A31C265959B7007EDE45 /* LoadingProgressViewModifier.swift in Sources */,
 				BF01A32F26596BDC007EDE45 /* CataasJSONResponse.swift in Sources */,
 				BF5A34E5265D4E27008866BB /* ImageFillGrid.swift in Sources */,
 				BF381B56265C1A4000D5484B /* ImageData.swift in Sources */,
@@ -679,6 +692,7 @@
 				BF01A349265A91F0007EDE45 /* CatImageSearchTextReducer.swift in Sources */,
 				BF01A33B26598009007EDE45 /* AnyCancellable+.swift in Sources */,
 				BF01A31826595968007EDE45 /* GeneralError.swift in Sources */,
+				BF01A31D265959B7007EDE45 /* LoadingProgressViewModifier.swift in Sources */,
 				BF01A33026596BDC007EDE45 /* CataasJSONResponse.swift in Sources */,
 				BF5A34E6265D61BB008866BB /* ImageFillGrid.swift in Sources */,
 				BF381B57265C1A4100D5484B /* ImageData.swift in Sources */,
