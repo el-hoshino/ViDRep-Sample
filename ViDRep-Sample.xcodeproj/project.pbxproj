@@ -73,6 +73,10 @@
 		BF5A34E5265D4E27008866BB /* ImageFillGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */; };
 		BF5A34E6265D61BB008866BB /* ImageFillGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */; };
 		BF930F6726593727005F2934 /* AsyncState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF930F6626593727005F2934 /* AsyncState.swift */; };
+		BFD91CAC265CF10100F60833 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD91CAB265CF10100F60833 /* AppRouter.swift */; };
+		BFD91CAD265CF10100F60833 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD91CAB265CF10100F60833 /* AppRouter.swift */; };
+		BFD91CAF265CF25C00F60833 /* RoutingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD91CAE265CF25C00F60833 /* RoutingModifier.swift */; };
+		BFD91CB0265CF25C00F60833 /* RoutingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD91CAE265CF25C00F60833 /* RoutingModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +158,8 @@
 		BF44370B26569EBE00485F40 /* SearchScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScene.swift; sourceTree = "<group>"; };
 		BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFillGrid.swift; sourceTree = "<group>"; };
 		BF930F6626593727005F2934 /* AsyncState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncState.swift; sourceTree = "<group>"; };
+		BFD91CAB265CF10100F60833 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		BFD91CAE265CF25C00F60833 /* RoutingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				BF01A31B265959B7007EDE45 /* LoadingProgressViewModifier.swift */,
+				BFD91CAE265CF25C00F60833 /* RoutingModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -323,6 +330,7 @@
 		BF065B5425E0FB490053E8B8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BFD91CA7265CEBE900F60833 /* App */,
 				BF01A32A2659606B007EDE45 /* Infrastructures */,
 				BF065B9D25E0FDB00053E8B8 /* Extensions */,
 				BF065B5725E0FB6B0053E8B8 /* Models */,
@@ -437,6 +445,14 @@
 				BF01A353265AB627007EDE45 /* DataSaveLoadError.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		BFD91CA7265CEBE900F60833 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BFD91CAB265CF10100F60833 /* AppRouter.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -663,6 +679,7 @@
 				BF01A32426595DE9007EDE45 /* ImageSearchingDispatcher.swift in Sources */,
 				BF01A311265939F3007EDE45 /* UserInputData.swift in Sources */,
 				BF381B53265C019200D5484B /* SavedImageList.swift in Sources */,
+				BFD91CAC265CF10100F60833 /* AppRouter.swift in Sources */,
 				BF01A33226596D46007EDE45 /* CatImage.swift in Sources */,
 				BF065B8325E0FCF70053E8B8 /* VocabularyDispatcher.swift in Sources */,
 				BF01A32C2659613B007EDE45 /* CataasAPIClient.swift in Sources */,
@@ -672,6 +689,7 @@
 				BF01A34E265AB2F1007EDE45 /* UserDefaultsDatabase.swift in Sources */,
 				BF065B3825E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
 				BF065B9F25E0FDBD0053E8B8 /* String.swift in Sources */,
+				BFD91CAF265CF25C00F60833 /* RoutingModifier.swift in Sources */,
 				BF01A31526593E4F007EDE45 /* GeneralError.swift in Sources */,
 				BF01A31326593CAC007EDE45 /* SearchTextInvalidReason.swift in Sources */,
 				BF01A32826595EC3007EDE45 /* SearchTextInput.swift in Sources */,
@@ -699,6 +717,7 @@
 				BF01A32526595DE9007EDE45 /* ImageSearchingDispatcher.swift in Sources */,
 				BF01A31726595968007EDE45 /* SearchTextInvalidReason.swift in Sources */,
 				BF381B54265C019200D5484B /* SavedImageList.swift in Sources */,
+				BFD91CAD265CF10100F60833 /* AppRouter.swift in Sources */,
 				BF01A33326596D46007EDE45 /* CatImage.swift in Sources */,
 				BF065B8C25E0FCFA0053E8B8 /* VocabularyDispatcher.swift in Sources */,
 				BF44370D26569EBE00485F40 /* SearchView.swift in Sources */,
@@ -709,6 +728,7 @@
 				BF01A34F265AB2F1007EDE45 /* UserDefaultsDatabase.swift in Sources */,
 				BF065B3925E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
 				BF01A31A26595968007EDE45 /* UserInputData.swift in Sources */,
+				BFD91CB0265CF25C00F60833 /* RoutingModifier.swift in Sources */,
 				BF065BA025E0FDBD0053E8B8 /* String.swift in Sources */,
 				BF065B7825E0FC5D0053E8B8 /* Repository.swift in Sources */,
 				BF01A32926595EC3007EDE45 /* SearchTextInput.swift in Sources */,
