@@ -726,7 +726,6 @@
 				BFD91CAD265CF10100F60833 /* AppRouter.swift in Sources */,
 				BF01A33326596D46007EDE45 /* CatImage.swift in Sources */,
 				BF065B8C25E0FCFA0053E8B8 /* VocabularyDispatcher.swift in Sources */,
-				BF44370D26569EBE00485F40 /* SearchView.swift in Sources */,
 				BF01A32D2659613B007EDE45 /* CataasAPIClient.swift in Sources */,
 				BF01A355265AB627007EDE45 /* DataSaveLoadError.swift in Sources */,
 				BF01A32226595D36007EDE45 /* AppRepository.swift in Sources */,
