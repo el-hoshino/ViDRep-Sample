@@ -85,4 +85,44 @@ extension AsyncState: ExpressibleByNilLiteral {
     
 }
 
+extension AsyncState {
+    
+    func map <T> (_ execution: (Value) throws -> T) rethrows -> AsyncState<T, Error> {
+        
+        switch data {
+        case .none:
+            return .none
+            
+        case .fetching:
+            return .fetching
+        
+        case .retrieved(let value):
+            return .retrieved(try execution(value))
+            
+        case .failed(let error):
+            return .failed(error)
+        }
+        
+    }
+    
+    func mapError <E: Swift.Error> (_ execution: (Error) throws -> E) rethrows -> AsyncState<Value, E> {
+        
+        switch data {
+        case .none:
+            return .none
+            
+        case .fetching:
+            return .fetching
+            
+        case .retrieved(let value):
+            return .retrieved(value)
+            
+        case .failed(let error):
+            return .failed(try execution(error))
+        }
+        
+    }
+    
+}
+
 extension AsyncState.Data: Equatable where Value: Equatable, Error: Equatable {}
