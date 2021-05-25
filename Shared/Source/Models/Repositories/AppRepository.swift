@@ -20,3 +20,95 @@ final class AppRepository: ObservableObject {
     private let savedImagesSemaphore = DispatchSemaphore(value: 1)
     
 }
+
+extension AppRepository: AppRouterRepositoryObject {
+    
+    var searchSceneRoute: SearchSceneRoute? {
+        get {
+            return _searchSceneRoute
+        }
+        set {
+            _searchSceneRoute = newValue
+        }
+    }
+    
+    var savedImageListSceneRoute: SavedImageListSceneRoute? {
+        get {
+            return _savedImageListSceneRoute
+        }
+        set {
+            _savedImageListSceneRoute = newValue
+        }
+    }
+    
+}
+
+extension AppRepository: ImageSearchingDispatcherRepositoryObject {
+    
+    var searchText: SearchTextInput {
+        get {
+            return _searchText
+        }
+        set {
+            DispatchQueue.main.async {
+                self._searchText = newValue
+            }
+        }
+    }
+    
+    var downloadedImage: AsyncState<CatImage, GeneralError> {
+        get {
+            return _downloadedImage
+        }
+        set {
+            DispatchQueue.main.async {
+                self._downloadedImage = newValue
+            }
+        }
+    }
+    
+}
+
+extension AppRepository: ImageSavingDispatcherRepositoryObject {
+    
+    var savedImages: SavedImageList {
+        get {
+            savedImagesSemaphore.wait()
+            defer { savedImagesSemaphore.signal() }
+            return _savedImages
+        }
+        set {
+            savedImagesSemaphore.wait()
+            DispatchQueue.main.async {
+                defer { self.savedImagesSemaphore.signal() }
+                self._savedImages = newValue
+            }
+        }
+    }
+    
+}
+
+extension AppRepository: SearchSceneRepositoryObject {
+    
+    func state() -> SearchSceneState {
+        .init(inputText: _searchText,
+              searchResult: _downloadedImage)
+    }
+    
+}
+
+extension AppRepository: SavedImageListSceneRepository {
+    
+    func state() -> SavedImageListSceneState {
+        .init(list: _savedImages)
+    }
+    
+}
+
+extension AppRepository: ImagePreviewSceneRepositoryObject {
+    
+    func state(image: CatImage) -> ImagePreviewSceneState {
+        .init(isFavorite: _savedImages.ids.contains(image.id))
+    }
+    
+}

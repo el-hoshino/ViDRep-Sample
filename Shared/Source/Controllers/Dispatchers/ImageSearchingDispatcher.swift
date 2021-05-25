@@ -63,3 +63,17 @@ extension ImageSearchingDispatcher {
     }
     
 }
+
+extension ImageSearchingDispatcher: SearchSceneDispatcherObject {
+    
+    func runAction(_ action: SearchSceneAction) {
+        switch action {
+        case .inputText(let input):
+            setSearchText(input)
+            
+        case .searchImage:
+            searchImage(with: repository.searchText.value)
+        }
+    }
+    
+}

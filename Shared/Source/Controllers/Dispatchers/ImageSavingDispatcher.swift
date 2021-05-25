@@ -108,3 +108,35 @@ extension ImageSavingDispatcher {
     }
     
 }
+
+extension ImageSavingDispatcher: SavedImageListSceneDispatcherObject {
+    
+    func runAction(_ action: SavedImageListSceneAction) {
+        DispatchQueue.global().async {
+            switch action {
+            case .loadImageData(id: let id):
+                self.loadImage(with: id)
+                
+            case .removeImageData(id: let id):
+                self.removeImage(with: id)
+            }
+        }
+    }
+    
+}
+
+extension ImageSavingDispatcher: ImagePreviewSceneDispatcherObject {
+    
+    func runAction(_ action: ImagePreviewSceneAction) {
+        DispatchQueue.global().async {
+            switch action {
+            case .markAsFavorite(let image):
+                self.saveImage(image)
+                
+            case .removeMarkAsFavorite(let image):
+                self.removeImage(with: image.id)
+            }
+        }
+    }
+    
+}

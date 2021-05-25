@@ -104,3 +104,11 @@ extension CataasAPIClient.TaskError: CustomStringConvertible {
     }
     
 }
+
+extension CataasAPIClient: ImageSearchingAPIClientObject {
+    
+    func searchImage(with line: String) -> AnyPublisher<CatImage, GeneralError> {
+        return send(line: line)
+    }
+    
+}
