@@ -16,6 +16,8 @@
 		BF01A31A26595968007EDE45 /* UserInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A310265939F3007EDE45 /* UserInputData.swift */; };
 		BF01A32126595D36007EDE45 /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32026595D36007EDE45 /* AppRepository.swift */; };
 		BF01A32226595D36007EDE45 /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32026595D36007EDE45 /* AppRepository.swift */; };
+		BF01A32426595DE9007EDE45 /* ImageSearchingDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32326595DE9007EDE45 /* ImageSearchingDispatcher.swift */; };
+		BF01A32526595DE9007EDE45 /* ImageSearchingDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32326595DE9007EDE45 /* ImageSearchingDispatcher.swift */; };
 		BF01A32826595EC3007EDE45 /* SearchTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32726595EC3007EDE45 /* SearchTextInput.swift */; };
 		BF01A32926595EC3007EDE45 /* SearchTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32726595EC3007EDE45 /* SearchTextInput.swift */; };
 		BF01A32C2659613B007EDE45 /* CataasAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A32B2659613B007EDE45 /* CataasAPIClient.swift */; };
@@ -52,6 +54,8 @@
 		BF1E382A25E104F50061E2AA /* VocabularyReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E377425E1029A0061E2AA /* VocabularyReducerTests.swift */; };
 		BF1E384B25E105850061E2AA /* VocabularyDispatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E383D25E105420061E2AA /* VocabularyDispatcherTests.swift */; };
 		BF1E385225E105850061E2AA /* VocabularyDispatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E383D25E105420061E2AA /* VocabularyDispatcherTests.swift */; };
+		BF381B50265BFD4A00D5484B /* ImageSavingDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF381B4F265BFD4A00D5484B /* ImageSavingDispatcher.swift */; };
+		BF381B51265BFD4A00D5484B /* ImageSavingDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF381B4F265BFD4A00D5484B /* ImageSavingDispatcher.swift */; };
 		BF381B53265C019200D5484B /* SavedImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF381B52265C019200D5484B /* SavedImageList.swift */; };
 		BF381B54265C019200D5484B /* SavedImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF381B52265C019200D5484B /* SavedImageList.swift */; };
 		BF381B56265C1A4000D5484B /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF381B55265C1A4000D5484B /* ImageData.swift */; };
@@ -95,6 +99,7 @@
 		BF01A31226593CAC007EDE45 /* SearchTextInvalidReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextInvalidReason.swift; sourceTree = "<group>"; };
 		BF01A31426593E4F007EDE45 /* GeneralError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralError.swift; sourceTree = "<group>"; };
 		BF01A32026595D36007EDE45 /* AppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRepository.swift; sourceTree = "<group>"; };
+		BF01A32326595DE9007EDE45 /* ImageSearchingDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchingDispatcher.swift; sourceTree = "<group>"; };
 		BF01A32726595EC3007EDE45 /* SearchTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextInput.swift; sourceTree = "<group>"; };
 		BF01A32B2659613B007EDE45 /* CataasAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CataasAPIClient.swift; sourceTree = "<group>"; };
 		BF01A32E26596BDC007EDE45 /* CataasJSONResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CataasJSONResponse.swift; sourceTree = "<group>"; };
@@ -127,6 +132,7 @@
 		BF1E381425E104DB0061E2AA /* UnitTests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UnitTests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1E381825E104DC0061E2AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF1E383D25E105420061E2AA /* VocabularyDispatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyDispatcherTests.swift; sourceTree = "<group>"; };
+		BF381B4F265BFD4A00D5484B /* ImageSavingDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSavingDispatcher.swift; sourceTree = "<group>"; };
 		BF381B52265C019200D5484B /* SavedImageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedImageList.swift; sourceTree = "<group>"; };
 		BF381B55265C1A4000D5484B /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		BF930F6626593727005F2934 /* AsyncState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncState.swift; sourceTree = "<group>"; };
@@ -322,6 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				BF065B8225E0FCF70053E8B8 /* VocabularyDispatcher.swift */,
+				BF01A32326595DE9007EDE45 /* ImageSearchingDispatcher.swift */,
+				BF381B4F265BFD4A00D5484B /* ImageSavingDispatcher.swift */,
 			);
 			path = Dispatchers;
 			sourceTree = "<group>";
@@ -604,6 +612,7 @@
 				BF065B9325E0FD5F0053E8B8 /* VocabularyReducer.swift in Sources */,
 				BF065BAE25E0FDF60053E8B8 /* HomeView.swift in Sources */,
 				BF930F6726593727005F2934 /* AsyncState.swift in Sources */,
+				BF01A32426595DE9007EDE45 /* ImageSearchingDispatcher.swift in Sources */,
 				BF01A311265939F3007EDE45 /* UserInputData.swift in Sources */,
 				BF381B53265C019200D5484B /* SavedImageList.swift in Sources */,
 				BF01A33226596D46007EDE45 /* CatImage.swift in Sources */,
@@ -617,6 +626,7 @@
 				BF01A31526593E4F007EDE45 /* GeneralError.swift in Sources */,
 				BF01A31326593CAC007EDE45 /* SearchTextInvalidReason.swift in Sources */,
 				BF01A32826595EC3007EDE45 /* SearchTextInput.swift in Sources */,
+				BF381B50265BFD4A00D5484B /* ImageSavingDispatcher.swift in Sources */,
 				BF01A33A26598009007EDE45 /* AnyCancellable+.swift in Sources */,
 				BF065B6725E0FBD10053E8B8 /* Repository.swift in Sources */,
 				BF01A32F26596BDC007EDE45 /* CataasJSONResponse.swift in Sources */,
@@ -632,6 +642,7 @@
 				BF01A31926595968007EDE45 /* AsyncState.swift in Sources */,
 				BF065B9425E0FD5F0053E8B8 /* VocabularyReducer.swift in Sources */,
 				BF065BAF25E0FDF60053E8B8 /* HomeView.swift in Sources */,
+				BF01A32526595DE9007EDE45 /* ImageSearchingDispatcher.swift in Sources */,
 				BF01A31726595968007EDE45 /* SearchTextInvalidReason.swift in Sources */,
 				BF381B54265C019200D5484B /* SavedImageList.swift in Sources */,
 				BF01A33326596D46007EDE45 /* CatImage.swift in Sources */,
@@ -646,6 +657,7 @@
 				BF065BA025E0FDBD0053E8B8 /* String.swift in Sources */,
 				BF065B7825E0FC5D0053E8B8 /* Repository.swift in Sources */,
 				BF01A32926595EC3007EDE45 /* SearchTextInput.swift in Sources */,
+				BF381B51265BFD4A00D5484B /* ImageSavingDispatcher.swift in Sources */,
 				BF01A33B26598009007EDE45 /* AnyCancellable+.swift in Sources */,
 				BF01A31826595968007EDE45 /* GeneralError.swift in Sources */,
 				BF01A33026596BDC007EDE45 /* CataasJSONResponse.swift in Sources */,
