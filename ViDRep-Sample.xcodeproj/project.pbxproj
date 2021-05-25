@@ -340,6 +340,7 @@
 		BF065B5525E0FB5D0053E8B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BF5A34E7265D699E008866BB /* Routers */,
 				BF01A31E26595C83007EDE45 /* Scenes */,
 				BF5A34E3265D4DF0008866BB /* Components */,
 				BF01A31626595949007EDE45 /* ViewModifiers */,
@@ -428,6 +429,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		BF5A34E7265D699E008866BB /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				BFD91CAB265CF10100F60833 /* AppRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
 		BF930F652659370D005F2934 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,7 +455,6 @@
 			isa = PBXGroup;
 			children = (
 				BFD91CA8265CEBFD00F60833 /* AppResolver.swift */,
-				BFD91CAB265CF10100F60833 /* AppRouter.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
