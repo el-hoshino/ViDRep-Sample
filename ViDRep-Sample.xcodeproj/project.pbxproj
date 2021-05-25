@@ -62,6 +62,8 @@
 		BF381B54265C019200D5484B /* SavedImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF381B52265C019200D5484B /* SavedImageList.swift */; };
 		BF381B56265C1A4000D5484B /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF381B55265C1A4000D5484B /* ImageData.swift */; };
 		BF381B57265C1A4100D5484B /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF381B55265C1A4000D5484B /* ImageData.swift */; };
+		BF5A34E5265D4E27008866BB /* ImageFillGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */; };
+		BF5A34E6265D61BB008866BB /* ImageFillGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */; };
 		BF930F6726593727005F2934 /* AsyncState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF930F6626593727005F2934 /* AsyncState.swift */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +140,7 @@
 		BF381B4F265BFD4A00D5484B /* ImageSavingDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSavingDispatcher.swift; sourceTree = "<group>"; };
 		BF381B52265C019200D5484B /* SavedImageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedImageList.swift; sourceTree = "<group>"; };
 		BF381B55265C1A4000D5484B /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFillGrid.swift; sourceTree = "<group>"; };
 		BF930F6626593727005F2934 /* AsyncState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -302,6 +305,7 @@
 		BF065B5525E0FB5D0053E8B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BF5A34E3265D4DF0008866BB /* Components */,
 				BF065BAD25E0FDF60053E8B8 /* HomeView.swift */,
 			);
 			path = Views;
@@ -379,6 +383,14 @@
 				BF1E381825E104DC0061E2AA /* Info.plist */,
 			);
 			path = "UnitTests macOS";
+			sourceTree = "<group>";
+		};
+		BF5A34E3265D4DF0008866BB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		BF930F652659370D005F2934 /* Data */ = {
@@ -635,6 +647,7 @@
 				BF01A33A26598009007EDE45 /* AnyCancellable+.swift in Sources */,
 				BF065B6725E0FBD10053E8B8 /* Repository.swift in Sources */,
 				BF01A32F26596BDC007EDE45 /* CataasJSONResponse.swift in Sources */,
+				BF5A34E5265D4E27008866BB /* ImageFillGrid.swift in Sources */,
 				BF381B56265C1A4000D5484B /* ImageData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -667,6 +680,7 @@
 				BF01A33B26598009007EDE45 /* AnyCancellable+.swift in Sources */,
 				BF01A31826595968007EDE45 /* GeneralError.swift in Sources */,
 				BF01A33026596BDC007EDE45 /* CataasJSONResponse.swift in Sources */,
+				BF5A34E6265D61BB008866BB /* ImageFillGrid.swift in Sources */,
 				BF381B57265C1A4100D5484B /* ImageData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
