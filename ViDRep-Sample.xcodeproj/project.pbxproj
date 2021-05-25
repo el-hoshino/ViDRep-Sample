@@ -38,6 +38,10 @@
 		BF01A34F265AB2F1007EDE45 /* UserDefaultsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A34D265AB2F1007EDE45 /* UserDefaultsDatabase.swift */; };
 		BF01A354265AB627007EDE45 /* DataSaveLoadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A353265AB627007EDE45 /* DataSaveLoadError.swift */; };
 		BF01A355265AB627007EDE45 /* DataSaveLoadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A353265AB627007EDE45 /* DataSaveLoadError.swift */; };
+		BF01A357265ABD8F007EDE45 /* ImagePreviewScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A356265ABD8F007EDE45 /* ImagePreviewScene.swift */; };
+		BF01A358265ABD8F007EDE45 /* ImagePreviewScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A356265ABD8F007EDE45 /* ImagePreviewScene.swift */; };
+		BF01A35A265BEF80007EDE45 /* SavedImageListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A359265BEF7F007EDE45 /* SavedImageListScene.swift */; };
+		BF01A35B265BEF80007EDE45 /* SavedImageListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01A359265BEF7F007EDE45 /* SavedImageListScene.swift */; };
 		BF065B2B25E0FAFA0053E8B8 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B2A25E0FAFA0053E8B8 /* Tests_iOS.swift */; };
 		BF065B3625E0FAFA0053E8B8 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B3525E0FAFA0053E8B8 /* Tests_macOS.swift */; };
 		BF065B3825E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF065B0F25E0FAF70053E8B8 /* ViDRep_SampleApp.swift */; };
@@ -64,6 +68,8 @@
 		BF381B54265C019200D5484B /* SavedImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF381B52265C019200D5484B /* SavedImageList.swift */; };
 		BF381B56265C1A4000D5484B /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF381B55265C1A4000D5484B /* ImageData.swift */; };
 		BF381B57265C1A4100D5484B /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF381B55265C1A4000D5484B /* ImageData.swift */; };
+		BF44370C26569EBE00485F40 /* SearchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44370B26569EBE00485F40 /* SearchScene.swift */; };
+		BF44370D26569EBE00485F40 /* SearchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44370B26569EBE00485F40 /* SearchScene.swift */; };
 		BF5A34E5265D4E27008866BB /* ImageFillGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */; };
 		BF5A34E6265D61BB008866BB /* ImageFillGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */; };
 		BF930F6726593727005F2934 /* AsyncState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF930F6626593727005F2934 /* AsyncState.swift */; };
@@ -116,6 +122,8 @@
 		BF01A345265A912D007EDE45 /* CatImageSearchTextReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageSearchTextReducer.swift; sourceTree = "<group>"; };
 		BF01A34D265AB2F1007EDE45 /* UserDefaultsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDatabase.swift; sourceTree = "<group>"; };
 		BF01A353265AB627007EDE45 /* DataSaveLoadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSaveLoadError.swift; sourceTree = "<group>"; };
+		BF01A356265ABD8F007EDE45 /* ImagePreviewScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewScene.swift; sourceTree = "<group>"; };
+		BF01A359265BEF7F007EDE45 /* SavedImageListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedImageListScene.swift; sourceTree = "<group>"; };
 		BF065B0F25E0FAF70053E8B8 /* ViDRep_SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViDRep_SampleApp.swift; sourceTree = "<group>"; };
 		BF065B1125E0FAFA0053E8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF065B1625E0FAFA0053E8B8 /* ViDRep-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViDRep-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +151,7 @@
 		BF381B4F265BFD4A00D5484B /* ImageSavingDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSavingDispatcher.swift; sourceTree = "<group>"; };
 		BF381B52265C019200D5484B /* SavedImageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedImageList.swift; sourceTree = "<group>"; };
 		BF381B55265C1A4000D5484B /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		BF44370B26569EBE00485F40 /* SearchScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScene.swift; sourceTree = "<group>"; };
 		BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFillGrid.swift; sourceTree = "<group>"; };
 		BF930F6626593727005F2934 /* AsyncState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +208,16 @@
 				BF01A31B265959B7007EDE45 /* LoadingProgressViewModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		BF01A31E26595C83007EDE45 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BF44370B26569EBE00485F40 /* SearchScene.swift */,
+				BF01A359265BEF7F007EDE45 /* SavedImageListScene.swift */,
+				BF01A356265ABD8F007EDE45 /* ImagePreviewScene.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		BF01A31F26595D29007EDE45 /* Repositories */ = {
@@ -316,6 +335,7 @@
 		BF065B5525E0FB5D0053E8B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BF01A31E26595C83007EDE45 /* Scenes */,
 				BF5A34E3265D4DF0008866BB /* Components */,
 				BF01A31626595949007EDE45 /* ViewModifiers */,
 				BF065BAD25E0FDF60053E8B8 /* HomeView.swift */,
@@ -648,6 +668,7 @@
 				BF01A32C2659613B007EDE45 /* CataasAPIClient.swift in Sources */,
 				BF01A354265AB627007EDE45 /* DataSaveLoadError.swift in Sources */,
 				BF01A32126595D36007EDE45 /* AppRepository.swift in Sources */,
+				BF44370C26569EBE00485F40 /* SearchScene.swift in Sources */,
 				BF01A34E265AB2F1007EDE45 /* UserDefaultsDatabase.swift in Sources */,
 				BF065B3825E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
 				BF065B9F25E0FDBD0053E8B8 /* String.swift in Sources */,
@@ -657,7 +678,9 @@
 				BF381B50265BFD4A00D5484B /* ImageSavingDispatcher.swift in Sources */,
 				BF01A348265A91F0007EDE45 /* CatImageSearchTextReducer.swift in Sources */,
 				BF01A33A26598009007EDE45 /* AnyCancellable+.swift in Sources */,
+				BF01A35A265BEF80007EDE45 /* SavedImageListScene.swift in Sources */,
 				BF065B6725E0FBD10053E8B8 /* Repository.swift in Sources */,
+				BF01A357265ABD8F007EDE45 /* ImagePreviewScene.swift in Sources */,
 				BF01A31C265959B7007EDE45 /* LoadingProgressViewModifier.swift in Sources */,
 				BF01A32F26596BDC007EDE45 /* CataasJSONResponse.swift in Sources */,
 				BF5A34E5265D4E27008866BB /* ImageFillGrid.swift in Sources */,
@@ -682,6 +705,7 @@
 				BF01A32D2659613B007EDE45 /* CataasAPIClient.swift in Sources */,
 				BF01A355265AB627007EDE45 /* DataSaveLoadError.swift in Sources */,
 				BF01A32226595D36007EDE45 /* AppRepository.swift in Sources */,
+				BF44370D26569EBE00485F40 /* SearchScene.swift in Sources */,
 				BF01A34F265AB2F1007EDE45 /* UserDefaultsDatabase.swift in Sources */,
 				BF065B3925E0FAFA0053E8B8 /* ViDRep_SampleApp.swift in Sources */,
 				BF01A31A26595968007EDE45 /* UserInputData.swift in Sources */,
@@ -691,7 +715,9 @@
 				BF381B51265BFD4A00D5484B /* ImageSavingDispatcher.swift in Sources */,
 				BF01A349265A91F0007EDE45 /* CatImageSearchTextReducer.swift in Sources */,
 				BF01A33B26598009007EDE45 /* AnyCancellable+.swift in Sources */,
+				BF01A35B265BEF80007EDE45 /* SavedImageListScene.swift in Sources */,
 				BF01A31826595968007EDE45 /* GeneralError.swift in Sources */,
+				BF01A358265ABD8F007EDE45 /* ImagePreviewScene.swift in Sources */,
 				BF01A31D265959B7007EDE45 /* LoadingProgressViewModifier.swift in Sources */,
 				BF01A33026596BDC007EDE45 /* CataasJSONResponse.swift in Sources */,
 				BF5A34E6265D61BB008866BB /* ImageFillGrid.swift in Sources */,
