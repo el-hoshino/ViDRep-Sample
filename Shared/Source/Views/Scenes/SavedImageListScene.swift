@@ -48,22 +48,12 @@ struct SavedImageListScene<RouterDelegate: SavedImageListSceneRouterDelegate,
     
     var body: some View {
         
-        LazyVGrid(columns: columns) {
-            ForEach(repository.state().list.ids, id: \.self) { id in
-                if let image = repository.state().list.images[id] {
-                    ImageFillGrid(image: image)
-                        .aspectRatio(1, contentMode: .fill)
-                        .border(Color.red)
-                        .onTapGesture {
-                            if let image = image.retrieved {
-                                routerDelegate?.viewNeedsRoute(to: .didSelectImage(image: .init(id: id, image: image)))
-                            }
-                        }
-                        .onAppear {
-                            if image.retrieved == nil {
-                                dispatcher.runAction(.loadImageData(id: id))
-                            }
-                        }
+        ScrollView {
+            LazyVGrid(columns: columns) {
+                ForEach(repository.state().list.ids, id: \.self) { id in
+                    if let image = repository.state().list.images[id] {
+                        makeGrid(id: id, image: image)
+                    }
                 }
             }
         }
@@ -75,6 +65,25 @@ struct SavedImageListScene<RouterDelegate: SavedImageListSceneRouterDelegate,
 }
 
 extension SavedImageListScene {
+    
+    @ViewBuilder
+    private func makeGrid(id: CatImage.ID, image: AsyncState<ImageData, DataSaveLoadError>) -> some View {
+        
+        ImageFillGrid(image: image)
+            .aspectRatio(1, contentMode: .fill)
+            .border(Color.red)
+            .onTapGesture {
+                if let image = image.retrieved {
+                    routerDelegate?.viewNeedsRoute(to: .didSelectImage(image: .init(id: id, image: image)))
+                }
+            }
+            .onAppear {
+                if image.retrieved == nil {
+                    dispatcher.runAction(.loadImageData(id: id))
+                }
+            }
+        
+    }
     
     private func makeAlert(from content: SaveLoadErrorContent) -> Alert {
         
