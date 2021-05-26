@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-let repository = Repository()
-let reducer = VocabularyReducer()
-let dispatcher = VocabularyDispatcher(reducer: reducer, repository: repository)
-
 @main
 struct ViDRep_SampleApp: App {
+    
+    @StateObject var appResolver = AppResolver()
+    
     var body: some Scene {
         WindowGroup {
-            HomeView(repository: repository, dispatcher: dispatcher)
+            appResolver.makeView()
         }
     }
 }
