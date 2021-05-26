@@ -70,6 +70,14 @@
 		BF5A34E6265D61BB008866BB /* ImageFillGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */; };
 		BF5A34E9265D7048008866BB /* ViewID.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34E8265D7048008866BB /* ViewID.swift */; };
 		BF5A34EA265D7048008866BB /* ViewID.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34E8265D7048008866BB /* ViewID.swift */; };
+		BF5A34F6265E2E39008866BB /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34F3265E2E1B008866BB /* StringTests.swift */; };
+		BF5A34F7265E2E3A008866BB /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34F3265E2E1B008866BB /* StringTests.swift */; };
+		BF5A34F9265E2F0C008866BB /* AnyCancellableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34F8265E2F0C008866BB /* AnyCancellableTests.swift */; };
+		BF5A34FA265E2F0C008866BB /* AnyCancellableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34F8265E2F0C008866BB /* AnyCancellableTests.swift */; };
+		BF5A34FC265E3161008866BB /* PublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34FB265E3161008866BB /* PublisherTests.swift */; };
+		BF5A34FD265E3161008866BB /* PublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34FB265E3161008866BB /* PublisherTests.swift */; };
+		BF5A3500265E34BF008866BB /* AsyncStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34FF265E34BF008866BB /* AsyncStateTests.swift */; };
+		BF5A3501265E34BF008866BB /* AsyncStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A34FF265E34BF008866BB /* AsyncStateTests.swift */; };
 		BF930F6726593727005F2934 /* AsyncState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF930F6626593727005F2934 /* AsyncState.swift */; };
 		BFD91CA9265CEBFD00F60833 /* AppResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD91CA8265CEBFD00F60833 /* AppResolver.swift */; };
 		BFD91CAA265CEBFD00F60833 /* AppResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD91CA8265CEBFD00F60833 /* AppResolver.swift */; };
@@ -156,6 +164,10 @@
 		BF44370B26569EBE00485F40 /* SearchScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScene.swift; sourceTree = "<group>"; };
 		BF5A34E4265D4E27008866BB /* ImageFillGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFillGrid.swift; sourceTree = "<group>"; };
 		BF5A34E8265D7048008866BB /* ViewID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewID.swift; sourceTree = "<group>"; };
+		BF5A34F3265E2E1B008866BB /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		BF5A34F8265E2F0C008866BB /* AnyCancellableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCancellableTests.swift; sourceTree = "<group>"; };
+		BF5A34FB265E3161008866BB /* PublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherTests.swift; sourceTree = "<group>"; };
+		BF5A34FF265E34BF008866BB /* AsyncStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStateTests.swift; sourceTree = "<group>"; };
 		BF930F6626593727005F2934 /* AsyncState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncState.swift; sourceTree = "<group>"; };
 		BFD91CA8265CEBFD00F60833 /* AppResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResolver.swift; sourceTree = "<group>"; };
 		BFD91CAB265CF10100F60833 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
@@ -402,7 +414,9 @@
 			isa = PBXGroup;
 			children = (
 				BF5A34F0265E2966008866BB /* Private Extensions */,
+				BF5A34F2265E2E04008866BB /* Extensions */,
 				BF5A34EC265E28E1008866BB /* Infrastructures */,
+				BF5A34FE265E33F9008866BB /* Models */,
 				BF5A34ED265E2932008866BB /* Controllers */,
 			);
 			path = "UnitTests Shared";
@@ -491,6 +505,24 @@
 			path = "Private Extensions";
 			sourceTree = "<group>";
 		};
+		BF5A34F2265E2E04008866BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A34F3265E2E1B008866BB /* StringTests.swift */,
+				BF5A34F8265E2F0C008866BB /* AnyCancellableTests.swift */,
+				BF5A34FB265E3161008866BB /* PublisherTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF5A34FE265E33F9008866BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFC0E0F9265E374100932EA2 /* Data */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BF930F652659370D005F2934 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -499,6 +531,14 @@
 				BF01A31226593CAC007EDE45 /* SearchTextInvalidReason.swift */,
 				BF01A33126596D46007EDE45 /* CatImage.swift */,
 				BF381B52265C019200D5484B /* SavedImageList.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BFC0E0F9265E374100932EA2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A34FF265E34BF008866BB /* AsyncStateTests.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -817,9 +857,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF01A34B265A93BB007EDE45 /* CatImageSearchTextReducerTests.swift in Sources */,
+				BF5A34F6265E2E39008866BB /* StringTests.swift in Sources */,
 				BF01A33726597737007EDE45 /* CataasAPIClientTests.swift in Sources */,
+				BF5A34F9265E2F0C008866BB /* AnyCancellableTests.swift in Sources */,
+				BF5A34FC265E3161008866BB /* PublisherTests.swift in Sources */,
 				BF01A34026598307007EDE45 /* ImageSearchingDispatcherTests.swift in Sources */,
 				BF01A3432659887E007EDE45 /* XCTExpect.swift in Sources */,
+				BF5A3500265E34BF008866BB /* AsyncStateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,9 +872,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF01A34C265A93BB007EDE45 /* CatImageSearchTextReducerTests.swift in Sources */,
+				BF5A34F7265E2E3A008866BB /* StringTests.swift in Sources */,
 				BF01A33826597737007EDE45 /* CataasAPIClientTests.swift in Sources */,
+				BF5A34FA265E2F0C008866BB /* AnyCancellableTests.swift in Sources */,
+				BF5A34FD265E3161008866BB /* PublisherTests.swift in Sources */,
 				BF01A34126598307007EDE45 /* ImageSearchingDispatcherTests.swift in Sources */,
 				BF01A3442659887E007EDE45 /* XCTExpect.swift in Sources */,
+				BF5A3501265E34BF008866BB /* AsyncStateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
