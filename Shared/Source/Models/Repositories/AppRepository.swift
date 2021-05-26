@@ -10,36 +10,11 @@ import Combine
 
 final class AppRepository: ObservableObject {
     
-    @Published var _searchSceneRoute: SearchSceneRoute?
-    @Published var _savedImageListSceneRoute: SavedImageListSceneRoute?
-    
     @Published var _searchText: SearchTextInput = .init("")
     @Published var _downloadedImage: AsyncState<CatImage, GeneralError> = .none
     @Published var _savedImages: SavedImageList = .init(images: [])
     
     private let savedImagesSemaphore = DispatchSemaphore(value: 1)
-    
-}
-
-extension AppRepository: AppRouterRepositoryObject {
-    
-    var searchSceneRoute: SearchSceneRoute? {
-        get {
-            return _searchSceneRoute
-        }
-        set {
-            _searchSceneRoute = newValue
-        }
-    }
-    
-    var savedImageListSceneRoute: SavedImageListSceneRoute? {
-        get {
-            return _savedImageListSceneRoute
-        }
-        set {
-            _savedImageListSceneRoute = newValue
-        }
-    }
     
 }
 

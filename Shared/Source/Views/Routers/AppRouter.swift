@@ -13,24 +13,15 @@ protocol AppRouterResolverDelegate: AnyObject {
     @ViewBuilder func appRouterNeedsView(for viewID: ViewID) -> ResolvedView
 }
 
-protocol AppRouterRepositoryObject: ObservableObject {
-    var searchSceneRoute: SearchSceneRoute? { get set }
-    var savedImageListSceneRoute: SavedImageListSceneRoute? { get set }
-}
-
-final class AppRouter<ResolverDelegate: AppRouterResolverDelegate,
-                      Repository: AppRouterRepositoryObject> {
+final class AppRouter<ResolverDelegate: AppRouterResolverDelegate> {
     
     weak var resolverDelegate: ResolverDelegate?
-    let repository: Repository
     
-    var objectWillChange: Repository.ObjectWillChangePublisher {
-        repository.objectWillChange
-    }
+    @Published var searchSceneRoute: SearchSceneRoute?
+    @Published var savedImageListSceneRoute: SavedImageListSceneRoute?
     
-    init(resolverDelegate: ResolverDelegate, repository: Repository) {
+    init(resolverDelegate: ResolverDelegate) {
         self.resolverDelegate = resolverDelegate
-        self.repository = repository
     }
     
 }
@@ -116,12 +107,12 @@ extension AppRouter: RouterObject {
     func navigationBinding(for viewID: ViewID) -> Binding<Bool> {
         switch viewID {
         case .searchScene:
-            return .init(get: { [unowned repository] in return repository.searchSceneRoute != nil },
-                         set: { [unowned repository] in assert($0 == false); repository.searchSceneRoute = nil })
+            return .init(get: { [unowned self] in return self.searchSceneRoute != nil },
+                         set: { [unowned self] in assert($0 == false); self.searchSceneRoute = nil })
             
         case .savedImageListScene:
-            return .init(get: { [unowned repository] in return repository.savedImageListSceneRoute != nil },
-                         set: { [unowned repository] in assert($0 == false); repository.savedImageListSceneRoute = nil })
+            return .init(get: { [unowned self] in return self.savedImageListSceneRoute != nil },
+                         set: { [unowned self] in assert($0 == false); self.savedImageListSceneRoute = nil })
             
         case .imagePreviewScene:
             return .constant(false)
@@ -132,10 +123,10 @@ extension AppRouter: RouterObject {
     func nextNavigationView(for viewID: ViewID) -> some View {
         switch viewID {
         case .searchScene:
-            nextNavigationView(accordingTo: repository.searchSceneRoute)
+            nextNavigationView(accordingTo: searchSceneRoute)
             
         case .savedImageListScene:
-            nextNavigationView(accordingTo: repository.savedImageListSceneRoute)
+            nextNavigationView(accordingTo: savedImageListSceneRoute)
             
         case .imagePreviewScene:
             EmptyView()
@@ -155,7 +146,7 @@ extension AppRouter: RouterObject {
 extension AppRouter: SearchSceneRouterDelegate {
     
     func viewNeedsRoute(to route: SearchSceneRoute) {
-        repository.searchSceneRoute = route
+        searchSceneRoute = route
     }
     
 }
@@ -163,7 +154,7 @@ extension AppRouter: SearchSceneRouterDelegate {
 extension AppRouter: SavedImageListSceneRouterDelegate {
     
     func viewNeedsRoute(to route: SavedImageListSceneRoute) {
-        repository.savedImageListSceneRoute = route
+        savedImageListSceneRoute = route
     }
     
 }

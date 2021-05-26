@@ -23,8 +23,7 @@ final class AppResolver: ObservableObject {
     private lazy var imageSavingDispatcher = ImageSavingDispatcher(userDatabase: userDefaultDatabase,
                                                                    repository: repository)
     
-    private lazy var appRouter = AppRouter(resolverDelegate: self,
-                                           repository: repository)
+    private lazy var appRouter = AppRouter(resolverDelegate: self)
         
     var objectWillChange: ObservableObjectPublisher {
         repository.objectWillChange
