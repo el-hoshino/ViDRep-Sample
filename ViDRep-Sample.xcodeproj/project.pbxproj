@@ -401,10 +401,9 @@
 		BF1E378825E103D90061E2AA /* UnitTests Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BF01A3342659771C007EDE45 /* CataasAPIClientTests.swift */,
-				BF01A33F26598307007EDE45 /* ImageSearchingDispatcherTests.swift */,
-				BF01A34A265A93BB007EDE45 /* CatImageSearchTextReducerTests.swift */,
-				BF01A3422659887E007EDE45 /* XCTExpect.swift */,
+				BF5A34F0265E2966008866BB /* Private Extensions */,
+				BF5A34EC265E28E1008866BB /* Infrastructures */,
+				BF5A34ED265E2932008866BB /* Controllers */,
 			);
 			path = "UnitTests Shared";
 			sourceTree = "<group>";
@@ -449,6 +448,47 @@
 				BF01A353265AB627007EDE45 /* DataSaveLoadError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		BF5A34EC265E28E1008866BB /* Infrastructures */ = {
+			isa = PBXGroup;
+			children = (
+				BF01A3342659771C007EDE45 /* CataasAPIClientTests.swift */,
+			);
+			path = Infrastructures;
+			sourceTree = "<group>";
+		};
+		BF5A34ED265E2932008866BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A34EE265E293C008866BB /* Dispatchers */,
+				BF5A34EF265E2950008866BB /* Reducers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BF5A34EE265E293C008866BB /* Dispatchers */ = {
+			isa = PBXGroup;
+			children = (
+				BF01A33F26598307007EDE45 /* ImageSearchingDispatcherTests.swift */,
+			);
+			path = Dispatchers;
+			sourceTree = "<group>";
+		};
+		BF5A34EF265E2950008866BB /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				BF01A34A265A93BB007EDE45 /* CatImageSearchTextReducerTests.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		BF5A34F0265E2966008866BB /* Private Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF01A3422659887E007EDE45 /* XCTExpect.swift */,
+			);
+			path = "Private Extensions";
 			sourceTree = "<group>";
 		};
 		BF930F652659370D005F2934 /* Data */ = {
