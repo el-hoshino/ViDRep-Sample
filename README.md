@@ -1,5 +1,7 @@
 # ViDRep-Sample (Name subject to change)
 
+[![Xcode](https://img.shields.io/badge/Xcode-12.5-blue.svg)](https://developer.apple.com/xcode)
+
 ViDRep<a id="q_name" href= "#a_name"><sup>1</sup></a> is an experimental architecture designed for SwiftUI.
 
 This is a sample project to show how to build an app using ViDRep. With this sample app, you're able to generate some cat images with any text (fewer than 10 characters) on it, and if you like that picture you can also save it to your device. Big thanks to [Cataas](https://cataas.com/) :smiling_face_with_three_hearts:
